@@ -1,61 +1,35 @@
 export const menuData = {
   breakfast: [
     {
-      category: "South Indian",
+      category: "Non-Veg Breakfast Specials",
       items: [
         {
           id: 1,
-          name: "Idli",
-          description: "Soft steamed rice cakes served with chutney & sambar",
-          price: 40,
-          image: "https://source.unsplash.com/200x200/?idli"
+          name: "Kothu Parotta (Chicken)",
+          description: "Flaky parotta shredded and tossed with spicy chicken masala",
+          price: 160,
+          image: "https://images.unsplash.com/photo-1603894584134-f132fe668295?auto=format&fit=crop&w=500&q=80",
+          chefnote: "Street-style live counter favorite.",
+          ingredients: ["Parotta", "Chicken", "Egg", "Spices"],
+          preferredTime: "Morning",
+          bestseller: true,
+          type: "non-veg",
+          rating: 4.8,
+          available: true
         },
         {
           id: 2,
-          name: "Dosa",
-          description: "Crispy dosa served with coconut chutney",
-          price: 60,
-          image: "https://source.unsplash.com/200x200/?dosa"
-        },
-        {
-          id: 3,
-          name: "Pongal",
-          description: "Creamy rice and lentil dish with ghee",
-          price: 70,
-          image: "https://source.unsplash.com/200x200/?pongal"
-        },
-        {
-          id: 4,
-          name: "Vada",
-          description: "Crispy fried urad dal vada",
-          price: 20,
-          image: "https://source.unsplash.com/200x200/?vada"
-        }
-      ]
-    },
-    {
-      category: "Beverages",
-      items: [
-        {
-          id: 5,
-          name: "Filter Coffee",
-          description: "Authentic South Indian filter coffee",
-          price: 25,
-          image: "https://source.unsplash.com/200x200/?filter-coffee"
-        },
-        {
-          id: 6,
-          name: "Masala Tea",
-          description: "Strong tea with traditional spices",
-          price: 20,
-          image: "https://source.unsplash.com/200x200/?tea"
-        },
-        {
-          id: 7,
-          name: "Fresh Lime Juice",
-          description: "Refreshing sweet & salted lime juice",
-          price: 30,
-          image: "https://source.unsplash.com/200x200/?lime-juice"
+          name: "Mutton Kheema Dosa",
+          description: "Crispy dosa topped with slow-cooked minced mutton",
+          price: 190,
+          image: "https://images.unsplash.com/photo-1668236543090-82eba5ee5976?auto=format&fit=crop&w=500&q=80",
+          chefnote: "Chef’s special fusion breakfast.",
+          ingredients: ["Dosa Batter", "Mutton Kheema"],
+          preferredTime: "Morning",
+          bestseller: true,
+          type: "non-veg",
+          rating: 4.9,
+          available: true
         }
       ]
     }
@@ -63,66 +37,69 @@ export const menuData = {
 
   lunch: [
     {
-      category: "Veg Meals",
-      items: [
-        {
-          id: 8,
-          name: "South Indian Meals",
-          description: "Rice, sambar, rasam, poriyal, kootu & appalam",
-          price: 150,
-          image: "https://source.unsplash.com/200x200/?south-indian-meals"
-        },
-        {
-          id: 9,
-          name: "North Indian Thali",
-          description: "Roti, rice, dal, paneer, sabzi & sweet",
-          price: 180,
-          image: "https://source.unsplash.com/200x200/?north-indian-thali"
-        }
-      ]
-    },
-    {
-      category: "Rice Items",
+      category: "Signature Biryani Collection",
       items: [
         {
           id: 10,
-          name: "Veg Biryani",
-          description: "Aromatic basmati rice cooked with vegetables",
-          price: 140,
-          image: "https://source.unsplash.com/200x200/?veg-biryani"
+          name: "Ambur Chicken Biryani",
+          description: "Authentic seeraga samba rice cooked with tender chicken",
+          price: 230,
+          image: "https://images.unsplash.com/photo-1633945274405-b6c8069047b0?auto=format&fit=crop&w=500&q=80",
+          chefnote: "Traditional dum cooked in sealed handi.",
+          ingredients: ["Seeraga Samba Rice", "Chicken", "Spices"],
+          preferredTime: "Lunch",
+          bestseller: true,
+          type: "non-veg",
+          rating: 4.9,
+          available: true
         },
         {
           id: 11,
-          name: "Curd Rice",
-          description: "Cooling yogurt rice with tempering",
-          price: 80,
-          image: "https://source.unsplash.com/200x200/?curd-rice"
-        },
-        {
-          id: 12,
-          name: "Lemon Rice",
-          description: "Tangy lemon flavored rice",
-          price: 90,
-          image: "https://source.unsplash.com/200x200/?lemon-rice"
+          name: "Mutton Dum Biryani",
+          description: "Royal basmati biryani layered with slow-cooked mutton",
+          price: 280,
+          image: "https://images.unsplash.com/photo-1563379091339-03b21bc4a4f8?auto=format&fit=crop&w=500&q=80",
+          chefnote: "Slow flame cooked for 45 minutes.",
+          ingredients: ["Basmati Rice", "Mutton"],
+          preferredTime: "Lunch",
+          bestseller: true,
+          type: "non-veg",
+          rating: 5.0,
+          available: true
         }
       ]
     },
+
     {
-      category: "Non-Veg Specials",
+      category: "Seafood Delights",
       items: [
         {
-          id: 13,
-          name: "Chicken Biryani",
-          description: "Spicy dum cooked chicken biryani",
-          price: 220,
-          image: "https://source.unsplash.com/200x200/?chicken-biryani"
+          id: 12,
+          name: "Vanjaram Fish Fry",
+          description: "Pan-seared king fish marinated in coastal spices",
+          price: 240,
+          image: "https://images.unsplash.com/photo-1546069901-eacef0df6022?auto=format&fit=crop&w=500&q=80",
+          chefnote: "Fresh catch of the day.",
+          ingredients: ["Seer Fish", "Chilli Powder", "Lemon"],
+          preferredTime: "Lunch/Dinner",
+          bestseller: true,
+          type: "non-veg",
+          rating: 4.8,
+          available: true
         },
         {
-          id: 14,
-          name: "Mutton Curry",
-          description: "Slow cooked spicy mutton curry",
-          price: 250,
-          image: "https://source.unsplash.com/200x200/?mutton-curry"
+          id: 13,
+          name: "Prawn Pepper Masala",
+          description: "Juicy prawns tossed in black pepper gravy",
+          price: 260,
+          image: "https://images.unsplash.com/photo-1604908176997-125f25cc6f3d?auto=format&fit=crop&w=500&q=80",
+          chefnote: "Spicy coastal specialty.",
+          ingredients: ["Prawns", "Black Pepper", "Curry Leaves"],
+          preferredTime: "Lunch/Dinner",
+          bestseller: true,
+          type: "non-veg",
+          rating: 4.7,
+          available: true
         }
       ]
     }
@@ -130,66 +107,75 @@ export const menuData = {
 
   dinner: [
     {
-      category: "Tiffin Items",
-      items: [
-        {
-          id: 15,
-          name: "Chapati",
-          description: "Soft whole wheat chapati",
-          price: 15,
-          image: "https://source.unsplash.com/200x200/?chapati"
-        },
-        {
-          id: 16,
-          name: "Parotta",
-          description: "Layered flaky parotta",
-          price: 20,
-          image: "https://source.unsplash.com/200x200/?parotta"
-        },
-        {
-          id: 17,
-          name: "Kothu Parotta",
-          description: "Chopped parotta mixed with gravy",
-          price: 120,
-          image: "https://source.unsplash.com/200x200/?kothu-parotta"
-        }
-      ]
-    },
-    {
-      category: "Gravy",
-      items: [
-        {
-          id: 18,
-          name: "Paneer Butter Masala",
-          description: "Creamy tomato based paneer curry",
-          price: 160,
-          image: "https://source.unsplash.com/200x200/?paneer-butter-masala"
-        },
-        {
-          id: 19,
-          name: "Chicken Gravy",
-          description: "Spicy South Indian chicken gravy",
-          price: 200,
-          image: "https://source.unsplash.com/200x200/?chicken-gravy"
-        }
-      ]
-    },
-    {
-      category: "Chinese",
+      category: "Charcoal Grill & BBQ",
       items: [
         {
           id: 20,
-          name: "Fried Rice",
-          description: "Indo-Chinese style vegetable fried rice",
-          price: 130,
-          image: "https://source.unsplash.com/200x200/?fried-rice"
+          name: "Alfaham Full Chicken",
+          description: "Whole chicken marinated in Arabian spices & charcoal grilled",
+          price: 480,
+          image: "https://images.unsplash.com/photo-1598515214211-89d3c73ae83b?auto=format&fit=crop&w=500&q=80",
+          chefnote: "Served with garlic toum & kuboos.",
+          ingredients: ["Full Chicken", "Arabian Spice Blend"],
+          preferredTime: "Dinner",
+          bestseller: true,
+          type: "non-veg",
+          rating: 4.9,
+          available: true
         },
         {
           id: 21,
-          name: "Noodles",
-          description: "Stir fried noodles with vegetables",
-          price: 120,
-          image: "https://source.unsplash.com/200x200/?noodles"
+          name: "Tandoori Platter",
+          description: "Mixed grill platter with chicken tikka, kebab & wings",
+          price: 520,
+          image: "https://images.unsplash.com/photo-1598514982841-7c1c8fdbd8a4?auto=format&fit=crop&w=500&q=80",
+          chefnote: "Perfect for sharing.",
+          ingredients: ["Chicken", "Yogurt", "Spices"],
+          preferredTime: "Dinner",
+          bestseller: true,
+          type: "non-veg",
+          rating: 4.8,
+          available: true
+        }
+      ]
+    },
+
+    {
+      category: "Bucket Combos",
+      items: [
+        {
+          id: 22,
+          name: "Family Chicken Bucket",
+          description: "12 pieces crispy fried chicken with dips",
+          price: 699,
+          image: "https://images.unsplash.com/photo-1562967916-eb82221dfb36?auto=format&fit=crop&w=500&q=80",
+          chefnote: "Best seller for group dining.",
+          ingredients: ["Chicken", "Secret Spice Mix"],
+          preferredTime: "Dinner",
+          bestseller: true,
+          type: "non-veg",
+          rating: 4.9,
+          available: true
+        }
+      ]
+    },
+
+    {
+      category: "Premium Desserts",
+      items: [
+        {
+          id: 30,
+          name: "Sizzling Brownie Supreme",
+          description: "Hot chocolate brownie topped with vanilla bean ice cream",
+          price: 180,
+          image: "https://images.unsplash.com/photo-1564355808539-22fda35bed7e?auto=format&fit=crop&w=500&q=80",
+          chefnote: "Chocolate lover’s paradise.",
+          ingredients: ["Dark Chocolate", "Ice Cream"],
+          preferredTime: "Post Dinner",
+          bestseller: true,
+          type: "dessert",
+          rating: 4.9,
+          available: true
         }
       ]
     }
