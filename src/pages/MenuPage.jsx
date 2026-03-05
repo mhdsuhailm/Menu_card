@@ -248,10 +248,11 @@ import Header from "../components/Header";
 import Menu from "../components/Menu";
 import DishModal from "../components/DishModal";
 import OrderDrawer from "../components/OrderDrawer";
-const [searchParams] = useSearchParams()
-const token = searchParams.get("token")
+
 const MenuPage = () => {
   const { type } = useParams();
+  const [searchParams] = useSearchParams()
+const token = searchParams.get("token")
 
   const [menuData, setMenuData] = useState([]);
   const [selectedDish, setSelectedDish] = useState(null);
