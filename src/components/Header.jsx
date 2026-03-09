@@ -44,7 +44,9 @@ const Header = ({ mealType }) => {
           />
 
           {/* MEAL TYPE */}
-          <h2 className="text-1xl font-semibold text-[#D4AF37] tracking-widest">
+          <h2 className="text-1xl font-semibold text-[#D4AF37] tracking-widest"
+          style={{ fontFamily: "Playfair Display SC", lineHeight: "16px" }}
+>
             {mealType?.toUpperCase()} FEAST
           </h2>
 
