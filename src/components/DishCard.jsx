@@ -121,7 +121,7 @@ const quantity = cart?.[item._id]?.quantity || 0;
 return (
 <div
 onClick={() => onSelect(item)}
-className="flex justify-between items-center gap-4 py-1"
+className="flex justify-between items-center gap-4 py-1 px-1"
 >
 {/* LEFT SIDE */} 
 <div className="flex-1 pr-2 sm:pr-4">
