@@ -272,7 +272,8 @@ const OrderDrawer = ({
     }
   };
 
-  if (!isOpen) return null;
+  // if (!isOpen) return null;
+  if (!isOpen && !showSuccess) return null;
 
   return (
     <>
