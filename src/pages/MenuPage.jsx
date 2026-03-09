@@ -248,6 +248,7 @@ import Header from "../components/Header";
 import Menu from "../components/Menu";
 import DishModal from "../components/DishModal";
 import OrderDrawer from "../components/OrderDrawer";
+import FeaturedDishes from "../components/FeaturedDish";
 
 const MenuPage = () => {
   const { type } = useParams();
@@ -325,13 +326,18 @@ const token = searchParams.get("token")
   );
 
   return (
-    <div className="bg-[#F8F6F1] min-h-screen pb-24">
-      <Header mealType={type} />
+    // <div className="bg-[#F8F6F1] min-h-screen pb-24">
+    <div className="bg-gradient-to-b from-[#052e2b] to-[#021d1b] min-h-screen">
+    <Header mealType={type} />
 
       <div className="max-w-3xl mx-auto px-4 py-6">
 
         {loading && (
           <p className="text-center text-gray-500">Loading menu...</p>
+        )}
+
+        {!loading && (
+          <FeaturedDishes menuData={menuData} />
         )}
 
         {!loading && (
@@ -362,7 +368,7 @@ const token = searchParams.get("token")
       />
 
       {/* ✅ Floating View Order Button */}
-      {totalItems > 0 && (
+      {/* {totalItems > 0 && (
         <div className="fixed bottom-6 left-4 right-4 sm:left-auto sm:right-6 sm:w-80 z-40">
           <button
             onClick={() => setIsDrawerOpen(true)}
@@ -374,7 +380,21 @@ const token = searchParams.get("token")
             </span>
           </button>
         </div>
-      )}
+      )} */}
+      {totalItems > 0 && (
+  <div className="fixed bottom-6 left-4 right-4 sm:left-auto sm:right-6 sm:w-80 z-40">
+    <button
+      onClick={() => setIsDrawerOpen(true)}
+      className="w-full bg-gradient-to-r from-[#0A5855] to-[#0E1F1E] text-white py-4 rounded-2xl shadow-lg flex justify-between px-6 items-center border border-[#C8A95155] hover:opacity-90 transition"
+    >
+      <span className="font-semibold">View Order</span>
+
+      <span className="bg-[#D4AF37] text-black px-3 py-1 rounded-lg text-sm font-bold">
+        {totalItems} Items
+      </span>
+    </button>
+  </div>
+)}
     </div>
   );
 };
