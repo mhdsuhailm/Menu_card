@@ -390,10 +390,17 @@ const OrderDrawer = ({
       </div>
 
       {/* SUCCESS MODAL */}
-      <SuccessModal
+      {/* <SuccessModal
         isOpen={showSuccess}
         onClose={() => setShowSuccess(false)}
-      />
+      /> */}
+      <SuccessModal
+  isOpen={showSuccess}
+  onClose={() => {
+    setShowSuccess(false);
+    window.location.href = "https://api.whatsapp.com/send?phone=15551456693";
+  }}
+/>
     </>
   );
 };

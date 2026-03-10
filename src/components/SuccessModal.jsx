@@ -1,9 +1,11 @@
 const SuccessModal = ({ isOpen, onClose }) => {
 if (!isOpen) return null;
-
+const handleClose = () => {
+  window.location.href = "https://api.whatsapp.com/send?phone=918072294374"
+}
 return ( <div className="fixed inset-0 z-[100] flex items-center justify-center bg-black/40 backdrop-blur-sm"> <div className="bg-white rounded-2xl w-80 p-6 shadow-xl text-center relative">
 
-```
+
     <button
       onClick={onClose}
       className="absolute right-4 top-3 text-gray-500"
